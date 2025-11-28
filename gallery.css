@@ -1,0 +1,249 @@
+body {
+    background-color: #FDF8F3;
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+header {
+    background-image: url(../images/Teal\ Paw\ Print\ Pattern.png);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .Logo a {
+    display: block;
+    width: 150px;
+    height: 150px;
+    background-image: url(../images/HeaderLogo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    margin: 10px 0;
+}
+
+.nav-links ul, .secondary-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-links ul li, .secondary-nav ul li {
+    margin: 10px;
+}
+
+.nav-links a, .secondary-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover, .secondary-nav a:hover {
+    text-decoration: underline;
+}
+
+/* MAIN */
+main h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+figure img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+figure figcaption {
+    color: #333;
+    text-transform: uppercase;
+    margin-top: 8px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Grid layout for pets */
+.pet-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 20px;
+}
+
+/* Card style */
+.pet-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.pet-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Images & videos inside cards */
+.pet-card img,
+.pet-card video {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.pet-card figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #444;
+}
+
+/* FOOTER */
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.hamburger {
+    display: none;
+    font-size: 32px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* DESKTOP */
+.hamburger {
+    display: none;
+}
+
+/* MODAL BACKGROUND */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    padding-top: 40px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+/* MODAL IMAGE */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+/* CAPTION */
+#modalCaption {
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    font-size: 18px;
+}
+
+/* CLOSE BUTTON */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* NEXT/PREV */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    user-select: none;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/*MEDIA QUERIES FT BREAKPOINTS*/
+@media (max-width: 480px) {
+    header {
+        padding: 15px;
+    }
+
+    header .Logo a {
+        width: 120px;
+        height: 120px;
+    }
+
+    .nav-links ul, .secondary-nav ul {
+        flex-direction: column;
+        display: none;
+    }
+
+    .nav-links.active ul {
+        display: flex;
+    }
+
+    li {
+        margin: 8px 0;
+    }
+
+    main h1 {
+        font-size: 1rem;
+    }
+
+    main p {
+        font-size: 0.9rem;
+    }
+
+    /* Mobile */
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links ul,
+    .secondary-nav ul {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* When toggled */
+    .nav-links.active ul,
+    .secondary-nav.active ul {
+        display: flex;
+    }
+
+    .modal-content {
+        max-width: 95%;
+    }
+
+    .prev, .next {
+        font-size: 30px;
+    }
+
+    .close {
+        font-size: 30px;
+    }
+}
+

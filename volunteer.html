@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Volunteer</title>
+        <link rel="stylesheet" href="css/volunteer.css">
+    </head>
+    <body>
+        <div id="navbar"></div>
+        <script src="javascript/script.js"></script>
+
+        <main style="margin-top: 20px;">
+            <h1>Volunteer with Paw Haven Rescue</h1>
+            <p>
+                At <strong>Paw Haven Rescue</strong>, we believe every paw deserves a chance. Our mission is to provide love, safety, and second chances to animals in need — but we can’t do it alone.
+                Volunteers are the heart of our rescue family, and your time and compassion can truly change lives.
+            </p>
+                <h2>Why Volunteer?</h2>
+                <ul>
+                    <li><strong>Make a difference:</strong> Help animals find the loving homes they deserve.</li>
+                    <li><strong>Learn & grow:</strong> Gain hands-on experience in animal care, rescue operations, and community outreach.</li>
+                    <li><strong>Build connections:</strong> Join a community of passionate animal lovers who share your dedication.</li>
+                    <li><strong>Share love:</strong> Whether it’s walking a dog, comforting a shy cat, or helping at events, your kindness means the world.</li>
+                </ul>             
+                <h2>Volunteer Opportunities</h2>
+            <p>We welcome people of all skills and backgrounds! Some ways you can help:</p>
+                <ul>
+                    <li><strong>Animal Care:</strong> Feeding, grooming, walking, and giving the animals the affection they need.</li>
+                    <li><strong>Foster Care:</strong> Provide a temporary, loving home until animals are adopted.</li>
+                    <li><strong>Photography & Media:</strong> Capture moments to help promote adoptions and awareness.</li>
+                    <li><strong>Events & Fundraising:</strong> Assist with adoption days, awareness events, and fundraising activities.</li>
+                    <li><strong>Logistics & Support:</strong> Organize supplies, help with transport, or lend a hand at our rescue center.</li>
+                </ul>
+                <h2>How to Join Us</h2>
+                <ol>
+                    <li><strong>Fill out our Volunteer Form.</strong></li>
+                    <li><strong>Attend a short orientation</strong> to learn about our rescue and safety practices.</li>
+                    <li><strong>Start making a difference!</strong></li>
+                </ol>
+
+                <h2>Volunteer Form</h2>
+
+                <!-- SUCCESS / ERROR MESSAGE BOX -->
+                <div id="formStatus"></div>
+
+                <form id="volunteerForm" action="/submit-volunteer" method="POST">
+
+                    <label>Full Name:</label>
+                    <input type="text" id="fullName" required>
+
+                    <label>Email Address:</label>
+                    <input type="email" id="email" required>
+
+                    <label>Phone Number:</label>
+                    <input type="text" id="phone" placeholder="e.g. 0781234567" required>
+
+                    <label>Preferred Volunteer Role:</label>
+                    <select id="role" required>
+                        <option value="">-- Select a role --</option>
+                        <option value="Animal Care">Animal Care</option>
+                        <option value="Foster Care">Foster Care</option>
+                        <option value="Photography">Photography</option>
+                        <option value="Events">Events & Fundraising</option>
+                        <option value="Logistics">Logistics & Support</option>
+                    </select>
+
+                    <label>Why would you like to volunteer?</label>
+                    <textarea id="motivation" rows="4" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+        </main>
+        <footer style="margin-top: 40px;">
+            <p><strong>&copy; ST10492744</strong></p>
+        </footer>
+    </body>
+</html>

@@ -1,8 +1,3 @@
-# WEDE5020_Summative
-This is my Web Development Summative project.
-
-These are the things that I made throughout the development of this website:
-
 #Part 1
 
 I created ten  web pages with an inserted header, a header logo that is a screen reader, text and images.
@@ -29,7 +24,7 @@ I added a Javascript file called "script.js".
 Created a Hamburger menu toggle that is adjusted when using mobile responsiveness.
 On the Homepage's image I used the modal interactive element, to allow the image to be clickable.
 On the "gallery" webpage I centered the text, so that the text does not break when using mobile responsiveness.
-I added more pictures in the "gallery" webpage.
+I added more pictures to the gallery.
 Also on the gallery I used the modal interactive element, to create a clickable slideshow for the images.
 On the "stories", "faqs", "about", and "news" webpages I used the accordion interactive element.
 On the "contact" webpage I enlarged the map.

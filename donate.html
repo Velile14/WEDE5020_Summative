@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Donate</title>
+        <link rel="stylesheet" href="css/donate.css">
+    </head>
+    <body>
+      <div id="navbar"></div>
+        <script src="javascript/script.js"></script>
+
+        <main style="margin-top: 20px;">
+            <h1>Make a Difference Today</h1>
+            <p><strong>Your donation saves lives, one paw at a time.</strong></p>
+            <p>
+                Every contribution helps us rescue, rehabilitate, and rehome vulnerable animals. 
+                Whether it's a warm blanket, life-saving medical care, or a safe shelter—your support fuels every step of their journey.
+            </p>
+            <h2>Why Donate?</h2>
+            <ul>
+                <li>Provide urgent veterinary care</li>
+                <li>Support foster and adoption programs</li>
+                <li>Fund food, shelter, and rehabilitation</li>
+                <li>Help us expand outreach and rescue operations</li>
+            </ul>
+            <p>Your generosity directly impacts our ability to respond quickly and compassionately to animals in need.</p>
+            <h2>Ways to Give</h2>
+            <p>Choose how you'd like to support our mission. Every rand makes a difference.</p>
+            <table style="border-collapse: collapse; width: 100%; border: 1px solid #ccc;">
+                <thead>
+                  <tr>
+                    <th style="border: 1px solid #ccc; padding: 12px; background-color: #f9f9f9;">Method</th>
+                    <th style="border: 1px solid #ccc; padding: 12px; background-color: #f9f9f9;">Details</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="border: 1px solid #ccc; padding: 12px;">One-time Donation</td>
+                    <td style="border: 1px solid #ccc; padding: 12px;">Choose any amount—every rand counts.</td>
+                  </tr>
+                  <tr>
+                    <td style="border: 1px solid #ccc; padding: 12px;">Monthly Supporter</td>
+                    <td style="border: 1px solid #ccc; padding: 12px;">Join our Paw Partners Club and make a lasting impact.</td>
+                  </tr>
+                  <tr>
+                    <td style="border: 1px solid #ccc; padding: 12px;">Sponsor A Pet</td>
+                    <td style="border: 1px solid #ccc; padding: 12px;">Cover the care costs of a specific animal and receive regular updates.</td>
+                  </tr>
+                  <tr>
+                    <td style="border: 1px solid #ccc; padding: 12px;">Corporate Giving</td>
+                    <td style="border: 1px solid #ccc; padding: 12px;">Partner with us to align your brand with compassion and community.</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h2>Safe & Secure</h2>
+              <p>
+                We use trusted payment gateways to ensure your donation is protected. 
+                You’ll receive a confirmation and thank-you message immediately.
+            </p>
+            <h2>Ready to Help?</h2>
+            <p>
+                Donate by filling the form and become part of their story.
+            </p>
+
+            <form id="donationForm" action="https://example.com/submitDonation" method="POST">
+
+              <label for="fullName">Full Name*</label>
+              <input type="text" id="fullName" name="fullName" required>
+
+              <label for="email">Email Address*</label>
+              <input type="email" id="email" name="email" required>
+
+              <label for="phone">Phone Number*</label>
+              <input type="text" id="phone" name="phone" placeholder="+27..." required>
+
+              <label for="amount">Donation Amount (R)*</label>
+              <input type="number" id="amount" name="amount" min="10" required>
+
+              <label for="donationType">Donation Type*</label>
+              <select id="donationType" name="donationType" required>
+                  <option value="">-- Select an Option --</option>
+                  <option value="one-time">One-Time Donation</option>
+                  <option value="monthly">Monthly Supporter</option>
+                  <option value="sponsor">Sponsor a Pet</option>
+                  <option value="corporate">Corporate Giving</option>
+              </select>
+
+              <label for="message">Message (optional)</label>
+              <textarea id="message" name="message" rows="4"></textarea>
+
+              <button type="submit">Submit Donation</button>
+
+              <p id="donationMessage" style="margin-top:10px; font-weight:bold;"></p>
+
+            </form>
+        </main>
+        <footer style="margin-top: 40px;">
+            <p><strong>&copy; ST10492744</strong></p>
+        </footer>
+    </body>
+</html>

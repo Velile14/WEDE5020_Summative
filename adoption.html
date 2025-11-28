@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Adoption Process</title>
+        <link rel="stylesheet" href="css/adoption.css">
+    </head>
+    <body>
+        <div id="navbar"></div>
+        <script src="javascript/script.js"></script>
+
+        <main style="margin-top: 20px;">
+            <section>
+                <h1>Adoption process</h1>
+                <p>
+                    We’re thrilled that you’re considering giving a rescued animal a loving home. 
+                    Our adoption process is designed to ensure the best match between pets and adopters, while maintaining transparency, care, and efficiency.
+                </p>
+                <ol style="margin-top: 40px;">
+                    <strong>1.Apply Online</strong>
+                    <p>
+                        Start by filling out our adoption application. 
+                        It helps us understand your lifestyle, preferences, and what kind of companion you're looking for.
+                    </p>
+                    <strong>2.Screening & Interview</strong>
+                    <p>
+                        We’ll review your application and follow up with a short interview to clarify details and answer your questions. 
+                        It’s a chance to explore compatibility and expectations.
+                    </p>
+                    <strong>3.Home Check</strong>
+                    <p>
+                        To ensure a safe environment, we’ll conduct a home visit or virtual tour. 
+                        This helps us support long-term success and prepare your space for your new pet.
+                    </p>
+                    <strong>4.Meet & Greet</strong>
+                    <p>
+                        You’ll meet your potential pet in a calm setting to see how you connect. 
+                        We encourage bringing family members or other pets to ensure harmony.
+                    </p>
+                    <strong>5.Final Approval & Fee</strong>
+                    <p>
+                        Once approved, you’ll pay the adoption fee, which covers medical care and essentials. 
+                        We’ll walk you through the final paperwork.
+                    </p>
+                    <strong>6.Adoption Agreement</strong>
+                    <p>
+                        You’ll sign a shared commitment to your pet’s well-being. 
+                        It outlines care guidelines and our ongoing support.
+                    </p>
+                    <strong>7.Welcome Home</strong>
+                    <p>
+                        We’ll coordinate pickup or delivery and provide a starter kit with food, tips, and contact info. 
+                        We’re here to help as you settle in.
+                    </p>
+                    <strong>8.Follow-Up Support</strong>
+                    <p>
+                        We’ll check in at key milestones to ensure everything’s going smoothly. 
+                        Our team remains available for advice and encouragement.
+                    </p>
+                </ol>
+            </section>
+
+            <!-- ===== ADOPTION FORM ===== -->
+            <section style="margin-top: 40px;">
+            <h2>Adoption Application Form</h2>
+            <form id="adoptionForm" action="submit_form.php" method="POST">
+                <label for="fullName">Full Name*</label><br>
+                <input type="text" id="fullName" name="fullName" required><br><br>
+
+                <label for="email">Email*</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="phone">Phone Number*</label><br>
+                <input type="tel" id="phone" name="phone" required placeholder="e.g., +27 123 456 7890"><br><br>
+
+                <label for="adoptionDate">Preferred Adoption Date*</label><br>
+                <input type="date" id="adoptionDate" name="adoptionDate" required><br><br>
+
+                <label for="petType">Type of Pet*</label><br>
+                <select id="petType" name="petType" required>
+                    <option value="">--Select--</option>
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                    <option value="other">Other</option>
+                </select><br><br>
+
+                <label for="experience">Previous Pet Experience*</label><br>
+                <textarea id="experience" name="experience" rows="4" placeholder="Describe your experience caring for pets" required></textarea><br><br>
+
+                <button type="submit">Submit Application</button>
+            </form>
+
+            <div id="formMessage" style="margin-top: 20px;"></div>
+        </section>
+        </main>
+        <footer style="margin-top: 40px;">
+            <p><strong>&copy; ST10492744</strong></p>
+        </footer>
+    </body>
+</html>

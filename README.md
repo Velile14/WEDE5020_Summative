@@ -29,7 +29,8 @@ I added a Javascript file called "script.js".
 Created a Hamburger menu toggle that is adjusted when using mobile responsiveness.
 On the Homepage's image I used the modal interactive element, to allow the image to be clickable.
 On the "gallery" webpage I centered the text, so that the text does not break when using mobile responsiveness.
-Also on the I used the modal interactive element, to create a clickable slideshow for the images.
+I added more pictures in the "gallery" webpage.
+Also on the gallery I used the modal interactive element, to create a clickable slideshow for the images.
 On the "stories", "faqs", "about", and "news" webpages I used the accordion interactive element.
 On the "contact" webpage I enlarged the map.
 On the "volunteer", "donate", and "adopt" webpages, I created forms. 
